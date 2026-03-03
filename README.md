@@ -1,4 +1,4 @@
-# Nano Banana Skill
+# Nano Banana CLI
 
 This repository contains an Agent Skill for Gemini API image generation workflows with Nano Banana model family support, including:
 
