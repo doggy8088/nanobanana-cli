@@ -1,8 +1,8 @@
-# Nano Banana 2 Source Notes
+# Nano Banana Source Notes
 
 Exact source set used for `references\image-generation-api.md`:
 
-1. [Build with Nano Banana 2 (Google blog)](https://blog.google/innovation-and-ai/technology/developers-tools/build-with-nano-banana-2/)
+1. [Build with Nano Banana (Google blog)](https://blog.google/innovation-and-ai/technology/developers-tools/build-with-nano-banana-2/)
 2. [Get Started Nano Banana (Colab notebook)](https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Get_Started_Nano_Banana.ipynb#nano-banana-pro)
 3. [Gemini API image-generation docs](https://ai.google.dev/gemini-api/docs/image-generation)
 
@@ -10,9 +10,9 @@ Exact source set used for `references\image-generation-api.md`:
 
 ## Extracted highlights by source
 
-### 1) Build with Nano Banana 2 (blog)
+### 1) Build with Nano Banana (blog)
 
-- Launch framing for Nano Banana 2 (`gemini-3.1-flash-image-preview`) with speed/fidelity focus.
+- Launch framing for Nano Banana (`gemini-3.1-flash-image-preview`) with speed/fidelity focus.
 - Calls out:
   - improved world knowledge with search-grounded visuals
   - advanced text rendering + in-image localization

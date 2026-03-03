@@ -1,6 +1,6 @@
 ---
 name: nanobanana-2-image-generation
-description: Use this skill when users ask to generate, edit, or compose images with Nano Banana 2 (Gemini image models), including text-to-image, image editing, multi-image composition, grounding, and output sizing/saving controls.
+description: Use this skill when users ask to generate, edit, or compose images with Nano Banana (Gemini image models), including text-to-image, image editing, multi-image composition, grounding, and output sizing/saving controls.
 ---
 
 ## Do this first

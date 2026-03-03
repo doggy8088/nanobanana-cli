@@ -2,7 +2,7 @@
 
 Consolidated reference for SKILL.md, based on these exact sources:
 
-- [Build with Nano Banana 2 (Google blog)](https://blog.google/innovation-and-ai/technology/developers-tools/build-with-nano-banana-2/)
+- [Build with Nano Banana (Google blog)](https://blog.google/innovation-and-ai/technology/developers-tools/build-with-nano-banana-2/)
 - [Get Started Nano Banana notebook (Colab)](https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Get_Started_Nano_Banana.ipynb#nano-banana-pro)
 - [Gemini API image-generation docs](https://ai.google.dev/gemini-api/docs/image-generation)
 
@@ -30,13 +30,13 @@ Consolidated reference for SKILL.md, based on these exact sources:
 
 | Public name | Model ID | Best use | Key points |
 |---|---|---|---|
-| Nano Banana 2 | `gemini-3.1-flash-image-preview` | Default choice for most apps | Best speed/quality/cost balance, supports Search Grounding, Thinking, and 512px tier |
+| Nano Banana | `gemini-3.1-flash-image-preview` | Default choice for most apps | Best speed/quality/cost balance, supports Search Grounding, Thinking, and 512px tier |
 | Nano Banana Pro | `gemini-3-pro-image-preview` | Professional asset production | Strong instruction following + text rendering + 4K output |
 | Nano Banana | `gemini-2.5-flash-image` | High-volume low-latency tasks | Fast, efficient, simpler size profile (no 512 tier) |
 
 Notes from sources:
 
-- Blog launch calls out improved world knowledge, better text rendering/localization, new extreme aspect ratios (1:4, 4:1, 1:8, 8:1), and configurable thinking levels for Nano Banana 2.
+- Blog launch calls out improved world knowledge, better text rendering/localization, new extreme aspect ratios (1:4, 4:1, 1:8, 8:1), and configurable thinking levels for Nano Banana.
 - Colab quickstart describes practical strengths: character consistency, intelligent editing (inpainting/outpainting style), composition, multimodal reasoning.
 - Docs confirm all generated images include [SynthID watermarking](https://ai.google.dev/gemini-api/docs/image-generation).
 
@@ -270,23 +270,23 @@ The docs include all of the following major strategy families:
 
 ### Generation strategy families
 
-1. Photorealistic scenes  
-2. Stylized illustrations/stickers  
-3. Accurate text in images  
-4. Product mockups/commercial photography  
-5. Minimalist/negative-space design  
-6. Sequential art/storyboard  
-7. Grounded real-time graphics via Google Search  
+1. Photorealistic scenes
+2. Stylized illustrations/stickers
+3. Accurate text in images
+4. Product mockups/commercial photography
+5. Minimalist/negative-space design
+6. Sequential art/storyboard
+7. Grounded real-time graphics via Google Search
 
 ### Editing strategy families
 
-1. Add/remove elements  
-2. Inpainting (semantic masking)  
-3. Style transfer  
-4. Advanced composition with multiple images  
-5. High-fidelity detail preservation  
-6. Bring rough sketch to finished output  
-7. Character consistency (multi-angle/360-style iteration)  
+1. Add/remove elements
+2. Inpainting (semantic masking)
+3. Style transfer
+4. Advanced composition with multiple images
+5. High-fidelity detail preservation
+6. Bring rough sketch to finished output
+7. Character consistency (multi-angle/360-style iteration)
 
 Best-practice principles repeatedly emphasized:
 
@@ -317,7 +317,7 @@ Production notes from sources:
 
 ## 10) Model-selection guidance
 
-- Start with **3.1 Flash Image (Nano Banana 2)** for best overall balance.
+- Start with **3.1 Flash Image (Nano Banana)** for best overall balance.
 - Use **3 Pro Image (Nano Banana Pro)** for high-fidelity professional assets and difficult instructions.
 - Use **2.5 Flash Image** for speed-sensitive high-volume flows.
 - Consider **Imagen** when you specifically need Imagen-family behavior/quality profile.
@@ -328,7 +328,7 @@ Production notes from sources:
 
 ### Primary sources
 
-- [Build with Nano Banana 2 (Google blog)](https://blog.google/innovation-and-ai/technology/developers-tools/build-with-nano-banana-2/)
+- [Build with Nano Banana (Google blog)](https://blog.google/innovation-and-ai/technology/developers-tools/build-with-nano-banana-2/)
 - [Get Started Nano Banana notebook (Colab)](https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Get_Started_Nano_Banana.ipynb#nano-banana-pro)
 - [Image generation docs (Gemini API)](https://ai.google.dev/gemini-api/docs/image-generation)
 

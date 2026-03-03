@@ -1,6 +1,6 @@
-# Nano Banana 2 Skill
+# Nano Banana Skill
 
-This repository contains a Codex skill for Gemini image generation workflows with Nano Banana 2 model family support, including:
+This repository contains an Agent Skill for Gemini API image generation workflows with Nano Banana model family support, including:
 
 - text-to-image
 - text+image editing
@@ -8,14 +8,14 @@ This repository contains a Codex skill for Gemini image generation workflows wit
 - optional Google Search grounding
 - configurable thinking, size, and aspect ratio
 
-The skill implementation lives at [skills/nano-banana-2/SKILL.md](skills/nano-banana-2/SKILL.md).
+The skill implementation lives at [skills/nanobanana-cli/SKILL.md](skills/nanobanana-cli/SKILL.md).
 
 ## Repository layout
 
-- `skills/nano-banana-2/SKILL.md`: skill instructions and operating defaults.
-- `skills/nano-banana-2/scripts/nanobanana-cli.js`: dependency-free Node.js CLI for one-shot generation/editing.
-- `skills/nano-banana-2/references/image-generation-api.md`: detailed API behavior and payload rules.
-- `skills/nano-banana-2/references/sources.md`: source provenance.
+- `skills/nanobanana-cli/SKILL.md`: skill instructions and operating defaults.
+- `skills/nanobanana-cli/scripts/nanobanana-cli.js`: dependency-free Node.js CLI for one-shot generation/editing.
+- `skills/nanobanana-cli/references/image-generation-api.md`: detailed API behavior and payload rules.
+- `skills/nanobanana-cli/references/sources.md`: source provenance.
 
 ## Requirements
 
@@ -30,7 +30,7 @@ Optional:
 
 ```powershell
 $env:GEMINI_API_KEY="YOUR_KEY"
-node skills/nano-banana-2/scripts/nanobanana-cli.js --prompt "A banana astronaut in space, cinematic lighting"
+node skills/nanobanana-cli/scripts/nanobanana-cli.js --prompt "A banana astronaut in space, cinematic lighting"
 ```
 
 Generated files are saved to `nanobanana-output/` by default.
@@ -40,7 +40,7 @@ Generated files are saved to `nanobanana-output/` by default.
 Generate with multiple references:
 
 ```powershell
-node skills/nano-banana-2/scripts/nanobanana-cli.js `
+node skills/nanobanana-cli/scripts/nanobanana-cli.js `
   --prompt "Create an ecommerce hero shot from these references" `
   -i .\ref1.png -i .\ref2.jpg
 ```
@@ -48,7 +48,7 @@ node skills/nano-banana-2/scripts/nanobanana-cli.js `
 Specify render controls:
 
 ```powershell
-node skills/nano-banana-2/scripts/nanobanana-cli.js `
+node skills/nanobanana-cli/scripts/nanobanana-cli.js `
   --prompt "Flat illustration of a weather dashboard" `
   --aspect-ratio 16:9 `
   --resolution 2K `
@@ -60,7 +60,7 @@ node skills/nano-banana-2/scripts/nanobanana-cli.js `
 Enable Google Search grounding:
 
 ```powershell
-node skills/nano-banana-2/scripts/nanobanana-cli.js `
+node skills/nanobanana-cli/scripts/nanobanana-cli.js `
   --prompt "Create a visual summary of this week's weather in San Francisco" `
   --google-search
 ```
@@ -68,7 +68,7 @@ node skills/nano-banana-2/scripts/nanobanana-cli.js `
 Show help:
 
 ```powershell
-node skills/nano-banana-2/scripts/nanobanana-cli.js --help
+node skills/nanobanana-cli/scripts/nanobanana-cli.js --help
 ```
 
 ## Skill defaults and limits
@@ -85,6 +85,6 @@ node skills/nano-banana-2/scripts/nanobanana-cli.js --help
 
 ## References
 
-- [Image generation reference](skills/nano-banana-2/references/image-generation-api.md)
-- [Source notes](skills/nano-banana-2/references/sources.md)
+- [Image generation reference](skills/nanobanana-cli/references/image-generation-api.md)
+- [Source notes](skills/nanobanana-cli/references/sources.md)
 - [Gemini image generation docs](https://ai.google.dev/gemini-api/docs/image-generation)
