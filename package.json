@@ -1,0 +1,39 @@
+{
+  "name": "@willh/nanobanana-cli",
+  "version": "0.1.0",
+  "description": "CLI for Gemini Nano Banana image generation and editing workflows.",
+  "bin": {
+    "nanobanana": "./skills/nanobanana-cli/scripts/nanobanana-cli.js"
+  },
+  "files": [
+    "skills/nanobanana-cli/scripts/nanobanana-cli.js",
+    "skills/nanobanana-cli/SKILL.md",
+    "skills/nanobanana-cli/references",
+    "README.md"
+  ],
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/cli.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doggy8088/nanobanana-cli.git"
+  },
+  "homepage": "https://github.com/doggy8088/nanobanana-cli#readme",
+  "bugs": {
+    "url": "https://github.com/doggy8088/nanobanana-cli/issues"
+  },
+  "keywords": [
+    "gemini",
+    "nano-banana",
+    "image-generation",
+    "cli"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

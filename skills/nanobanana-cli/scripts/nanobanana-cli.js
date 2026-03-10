@@ -5,9 +5,9 @@
  * Simple Gemini image CLI wrapper (no dependencies).
  *
  * Usage:
- *   node scripts\nanobanana-cli.js --prompt "A banana astronaut in space"
- *   node scripts\nanobanana-cli.js -p "Stylize this" -i .\ref1.png -i .\ref2.jpg --resolution 512
- *   node scripts\nanobanana-cli.js --prompt "Forecast infographic" --google-search
+ *   nanobanana --prompt "A banana astronaut in space"
+ *   nanobanana -p "Stylize this" -i .\ref1.png -i .\ref2.jpg --resolution 512
+ *   nanobanana --prompt "Forecast infographic" --google-search
  */
 
 const fs = require("node:fs");
@@ -26,8 +26,9 @@ function printHelp() {
   console.log(`Nano Banana Gemini Image CLI
 
 Usage:
-  node scripts\\nanobanana-cli.js [options] --prompt "your prompt"
-  node scripts\\nanobanana-cli.js [options] "your prompt"
+  nanobanana [options] --prompt "your prompt"
+  nanobanana [options] "your prompt"
+  npx @willh/nanobanana-cli [options] --prompt "your prompt"
 
 Options:
   -p, --prompt <text>         Prompt text
