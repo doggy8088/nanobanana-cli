@@ -16,12 +16,12 @@ Recommended runtime:
 
 - Node.js 22+
 - npm latest
-- Gemini API key in `GEMINI_API_KEY`
+- Gemini API key in `NANOBANANA_GEMINI_API_KEY` or fallback `GEMINI_API_KEY`
 
 Run without installing:
 
 ```powershell
-$env:GEMINI_API_KEY="YOUR_KEY"
+$env:NANOBANANA_GEMINI_API_KEY="YOUR_KEY"
 npx @willh/nanobanana-cli --prompt "A banana astronaut in space, cinematic lighting"
 ```
 
@@ -37,7 +37,7 @@ nanobanana --help
 Basic generation:
 
 ```powershell
-$env:GEMINI_API_KEY="YOUR_KEY"
+$env:NANOBANANA_GEMINI_API_KEY="YOUR_KEY"
 nanobanana --prompt "A banana astronaut in space, cinematic lighting"
 ```
 
@@ -82,20 +82,21 @@ Generated files are saved to `nanobanana-output/` by default.
 - `-p, --prompt <text>`: prompt text
 - `-i, --image <path>`: reference image path, repeatable up to 14 images
 - `--images <p1,p2,...>`: comma-separated reference image paths
-- `--model <name>`: model name, default `gemini-3.1-flash-image-preview` or `GEMINI_MODEL`
+- `--model <name>`: model name, default `gemini-3.1-flash-image-preview` or `NANOBANANA_MODEL`
 - `--thinking <level>`: `minimal`, `low`, `medium`, `high`
 - `--aspect-ratio <ratio>`: for example `1:1`, `16:9`, `5:4`, `Auto`
 - `--resolution <size>`: `512`, `512px`, `1K`, `2K`, `4K`
 - `--output-mode <mode>`: `images` or `both`
 - `--google-search`: enable Google Search grounding
 - `--output-dir <dir>`: output directory
-- `--api-key <key>`: override `GEMINI_API_KEY`
+- `--api-key <key>`: override `NANOBANANA_GEMINI_API_KEY` or `GEMINI_API_KEY`
 - `--name-prefix <prefix>`: output file prefix
 - `-h, --help`: print help
 
 ## Defaults
 
 - Default model: `gemini-3.1-flash-image-preview`
+- Model env override: `NANOBANANA_MODEL`
 - Default thinking: `high`
 - Default aspect ratio: `Auto`
 - Default resolution: `1K`

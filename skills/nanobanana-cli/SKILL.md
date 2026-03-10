@@ -9,8 +9,8 @@ description: Use this skill when users ask to generate, edit, or compose images 
 - Do **not** teach raw `curl`; keep guidance in JS CLI/wrapper form.
 
 ## Enforce these defaults
-- API key source: `GEMINI_API_KEY`.
-- Default model: `gemini-3.1-flash-image-preview` (allow env override via `GEMINI_MODEL`).
+- API key source: `NANOBANANA_GEMINI_API_KEY` with fallback `GEMINI_API_KEY`.
+- Default model: `gemini-3.1-flash-image-preview` (allow env override via `NANOBANANA_MODEL`).
 - Reference images: support up to **14** total.
 - Thinking strength: configurable (`minimal|low|medium|high`), default **High**.
 - Aspect ratio: default **Auto**.
