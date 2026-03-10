@@ -152,7 +152,8 @@ GitHub Actions includes:
 ## Repository Layout
 
 - `skills/nanobanana-cli/SKILL.md`: skill instructions and operating defaults
-- `skills/nanobanana-cli/scripts/nanobanana-cli.js`: CLI entrypoint published as the `nanobanana` binary
+- `bin/nanobanana.js`: published `nanobanana` binary wrapper
+- `skills/nanobanana-cli/scripts/nanobanana-cli.js`: main CLI implementation
 - `skills/nanobanana-cli/references/image-generation-api.md`: detailed API behavior and payload rules
 - `skills/nanobanana-cli/references/sources.md`: source provenance
 

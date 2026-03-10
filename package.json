@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "description": "CLI for Gemini Nano Banana image generation and editing workflows.",
   "bin": {
-    "nanobanana": "./skills/nanobanana-cli/scripts/nanobanana-cli.js"
+    "nanobanana": "./bin/nanobanana.js"
   },
   "files": [
+    "bin/nanobanana.js",
     "skills/nanobanana-cli/scripts/nanobanana-cli.js",
     "skills/nanobanana-cli/SKILL.md",
     "skills/nanobanana-cli/references",
