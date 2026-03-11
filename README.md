@@ -1,5 +1,7 @@
 # Nano Banana CLI
 
+![Nano Banana CLI Cover](docs/cover.svg)
+
 `@willh/nanobanana-cli` is a dependency-free Node.js CLI for Gemini Nano Banana image workflows:
 
 - text-to-image

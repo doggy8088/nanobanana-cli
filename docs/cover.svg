@@ -1,0 +1,301 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 480" width="1920" height="480">
+  <defs>
+    <!-- Dark background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="60%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+    <!-- Banana yellow gradient -->
+    <linearGradient id="bananaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE135"/>
+      <stop offset="60%" stop-color="#F6C90E"/>
+      <stop offset="100%" stop-color="#D4A800"/>
+    </linearGradient>
+    <!-- Banana shadow gradient -->
+    <linearGradient id="bananaShadow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B8860B" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#B8860B" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Yellow glow (near banana) -->
+    <radialGradient id="glowGrad" cx="21%" cy="50%" r="22%">
+      <stop offset="0%" stop-color="#FBBF24" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#FBBF24" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Terminal background -->
+    <linearGradient id="termGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#21262d"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <!-- Drop shadow filter -->
+    <filter id="bananaDrop" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="4" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <!-- Clip path for rounded corners -->
+    <clipPath id="clip">
+      <rect width="1920" height="480" rx="16" ry="16"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <!-- Background -->
+    <rect width="1920" height="480" fill="url(#bgGrad)"/>
+    <rect width="1920" height="480" fill="url(#glowGrad)"/>
+
+    <!-- Subtle grid pattern -->
+    <g opacity="0.035" stroke="#FBBF24" stroke-width="0.5">
+      <line x1="0" y1="120" x2="1920" y2="120"/>
+      <line x1="0" y1="240" x2="1920" y2="240"/>
+      <line x1="0" y1="360" x2="1920" y2="360"/>
+      <line x1="160" y1="0" x2="160" y2="480"/>
+      <line x1="320" y1="0" x2="320" y2="480"/>
+      <line x1="480" y1="0" x2="480" y2="480"/>
+      <line x1="640" y1="0" x2="640" y2="480"/>
+      <line x1="800" y1="0" x2="800" y2="480"/>
+      <line x1="960" y1="0" x2="960" y2="480"/>
+      <line x1="1120" y1="0" x2="1120" y2="480"/>
+      <line x1="1280" y1="0" x2="1280" y2="480"/>
+      <line x1="1440" y1="0" x2="1440" y2="480"/>
+      <line x1="1600" y1="0" x2="1600" y2="480"/>
+      <line x1="1760" y1="0" x2="1760" y2="480"/>
+    </g>
+
+    <!-- ===== BANANA ILLUSTRATION (left panel, 0-378) ===== -->
+    <circle cx="192" cy="240" r="165" fill="#FBBF24" opacity="0.07"/>
+
+    <!-- Banana main body -->
+    <g filter="url(#bananaDrop)">
+      <path d="
+        M 90,370
+        C 50,330 25,248 46,172
+        C 62,112 102,66 150,48
+        C 202,28 256,36 292,68
+        C 326,100 332,146 312,188
+        C 292,228 258,258 232,284
+        C 206,310 184,334 164,354
+        C 147,372 118,388 90,370 Z
+      " fill="url(#bananaGrad)"/>
+    </g>
+
+    <!-- Banana inner shadow -->
+    <path d="
+      M 90,370
+      C 50,330 25,248 46,172
+      C 62,112 102,66 150,48
+      L 157,61
+      C 110,78 72,120 59,178
+      C 42,248 64,324 102,360 Z
+    " fill="url(#bananaShadow)"/>
+
+    <!-- Banana highlight -->
+    <path d="
+      M 157,56
+      C 192,41 238,43 274,71
+      C 246,48 202,38 157,56 Z
+    " fill="rgba(255,255,255,0.35)"/>
+
+    <!-- Banana tip (bottom) -->
+    <path d="
+      M 90,370
+      C 75,380 65,395 70,405
+      C 75,410 85,405 90,370 Z
+    " fill="#7a5200"/>
+
+    <!-- Banana stem (top) -->
+    <path d="
+      M 150,48
+      C 147,34 152,20 162,14
+      C 168,11 172,16 150,48 Z
+    " fill="#5a3800"/>
+
+    <!-- Sparkle dots -->
+    <circle cx="318" cy="76" r="3" fill="#FBBF24" opacity="0.7"/>
+    <circle cx="340" cy="116" r="2" fill="#FBBF24" opacity="0.5"/>
+    <circle cx="298" cy="136" r="2.5" fill="#FBBF24" opacity="0.6"/>
+    <circle cx="60" cy="158" r="2" fill="#FBBF24" opacity="0.4"/>
+    <circle cx="40" cy="276" r="2.5" fill="#FBBF24" opacity="0.5"/>
+    <circle cx="86" cy="416" r="2" fill="#FBBF24" opacity="0.4"/>
+    <circle cx="180" cy="406" r="3" fill="#FBBF24" opacity="0.6"/>
+    <circle cx="258" cy="344" r="2" fill="#FBBF24" opacity="0.4"/>
+
+    <!-- Star sparkles -->
+    <g transform="translate(334, 52)" opacity="0.8">
+      <line x1="0" y1="-10" x2="0" y2="10" stroke="#FBBF24" stroke-width="1.5"/>
+      <line x1="-10" y1="0" x2="10" y2="0" stroke="#FBBF24" stroke-width="1.5"/>
+      <line x1="-7" y1="-7" x2="7" y2="7" stroke="#FBBF24" stroke-width="1"/>
+      <line x1="7" y1="-7" x2="-7" y2="7" stroke="#FBBF24" stroke-width="1"/>
+    </g>
+    <g transform="translate(30, 120)" opacity="0.6">
+      <line x1="0" y1="-6" x2="0" y2="6" stroke="#FBBF24" stroke-width="1.2"/>
+      <line x1="-6" y1="0" x2="6" y2="0" stroke="#FBBF24" stroke-width="1.2"/>
+      <line x1="-4" y1="-4" x2="4" y2="4" stroke="#FBBF24" stroke-width="0.8"/>
+      <line x1="4" y1="-4" x2="-4" y2="4" stroke="#FBBF24" stroke-width="0.8"/>
+    </g>
+    <g transform="translate(298, 370)" opacity="0.5">
+      <line x1="0" y1="-5" x2="0" y2="5" stroke="#FBBF24" stroke-width="1"/>
+      <line x1="-5" y1="0" x2="5" y2="0" stroke="#FBBF24" stroke-width="1"/>
+    </g>
+
+    <!-- ===== PRIMARY VERTICAL SEPARATOR ===== -->
+    <line x1="378" y1="36" x2="378" y2="444" stroke="#30363d" stroke-width="1" opacity="0.8"/>
+
+    <!-- ===== INFO COLUMN (398–940) ===== -->
+
+    <!-- Title -->
+    <text
+      x="408" y="108"
+      font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+      font-size="56"
+      font-weight="700"
+      fill="#ffffff"
+      letter-spacing="-1"
+    >Nano Banana CLI</text>
+
+    <!-- Package name badge -->
+    <rect x="408" y="126" width="356" height="36" rx="6" fill="#FBBF24" opacity="0.12"/>
+    <rect x="408" y="126" width="356" height="36" rx="6" fill="none" stroke="#FBBF24" stroke-width="1" opacity="0.3"/>
+    <text
+      x="420" y="151"
+      font-family="ui-monospace, 'SFMono-Regular', 'Consolas', 'Liberation Mono', monospace"
+      font-size="21"
+      fill="#FBBF24"
+      letter-spacing="0.5"
+    >@willh/nanobanana-cli</text>
+
+    <!-- Taglines -->
+    <text
+      x="408" y="211"
+      font-family="ui-sans-serif, system-ui, -apple-system, sans-serif"
+      font-size="20"
+      fill="#8b949e"
+    >Dependency-free Node.js CLI</text>
+    <text
+      x="408" y="240"
+      font-family="ui-sans-serif, system-ui, -apple-system, sans-serif"
+      font-size="20"
+      fill="#8b949e"
+    >for Gemini Nano Banana image workflows</text>
+
+    <!-- Feature pills -->
+    <rect x="408" y="263" width="148" height="28" rx="14" fill="#1f2937"/>
+    <text x="482" y="281" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#58a6ff" text-anchor="middle">text-to-image</text>
+
+    <rect x="566" y="263" width="88" height="28" rx="14" fill="#1f2937"/>
+    <text x="610" y="281" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#58a6ff" text-anchor="middle">editing</text>
+
+    <rect x="664" y="263" width="124" height="28" rx="14" fill="#1f2937"/>
+    <text x="726" y="281" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#58a6ff" text-anchor="middle">composition</text>
+
+    <rect x="798" y="263" width="114" height="28" rx="14" fill="#1f2937"/>
+    <text x="855" y="281" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#58a6ff" text-anchor="middle">grounding</text>
+
+    <!-- Quick-start label -->
+    <text
+      x="408" y="325"
+      font-family="ui-sans-serif, system-ui, -apple-system, sans-serif"
+      font-size="12"
+      fill="#6e7681"
+      letter-spacing="0.5"
+    >QUICK START</text>
+
+    <!-- Quick-start code line -->
+    <rect x="408" y="336" width="512" height="30" rx="6" fill="#0d1117"/>
+    <rect x="408" y="336" width="512" height="30" rx="6" fill="none" stroke="#30363d" stroke-width="1"/>
+    <text x="420" y="356" font-family="ui-monospace, 'SFMono-Regular', 'Consolas', monospace" font-size="13" fill="#f0f6fc">
+      <tspan fill="#8b949e">$ </tspan><tspan fill="#79c0ff">npx</tspan><tspan fill="#f0f6fc"> @willh/nanobanana-cli </tspan><tspan fill="#a5d6ff">--help</tspan>
+    </text>
+
+    <!-- Requirements -->
+    <text
+      x="408" y="396"
+      font-family="ui-sans-serif, system-ui, -apple-system, sans-serif"
+      font-size="13"
+      fill="#6e7681"
+    >Node.js 22+  &#xB7;  Gemini API key in</text>
+    <text
+      x="408" y="414"
+      font-family="ui-monospace, 'SFMono-Regular', 'Consolas', monospace"
+      font-size="12"
+      fill="#8b949e"
+    >NANOBANANA_GEMINI_API_KEY</text>
+
+    <!-- ===== COLUMN SEPARATOR ===== -->
+    <line x1="948" y1="36" x2="948" y2="444" stroke="#30363d" stroke-width="1" opacity="0.5"/>
+
+    <!-- ===== TERMINAL COLUMN (968-1890) ===== -->
+
+    <!-- === Terminal Block 1 === -->
+    <rect x="968" y="26" width="912" height="152" rx="10" fill="url(#termGrad)" stroke="#30363d" stroke-width="1"/>
+    <!-- Title bar -->
+    <rect x="968" y="26" width="912" height="32" rx="10" fill="#21262d"/>
+    <rect x="968" y="42" width="912" height="16" fill="#21262d"/>
+    <!-- Traffic lights -->
+    <circle cx="992" cy="42" r="6" fill="#ff5f57"/>
+    <circle cx="1012" cy="42" r="6" fill="#ffbd2e"/>
+    <circle cx="1032" cy="42" r="6" fill="#28c840"/>
+    <!-- Terminal label -->
+    <text x="1424" y="47" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">nanobanana — text-to-image</text>
+    <!-- Code lines -->
+    <text x="988" y="88" font-family="ui-monospace, 'SFMono-Regular', 'Consolas', monospace" font-size="14" fill="#f0f6fc">
+      <tspan fill="#8b949e">$ </tspan><tspan fill="#79c0ff">nanobanana</tspan><tspan fill="#f0f6fc"> \</tspan>
+    </text>
+    <text x="988" y="110" font-family="ui-monospace, 'SFMono-Regular', 'Consolas', monospace" font-size="14" fill="#f0f6fc">
+      <tspan x="1004" fill="#a5d6ff">--prompt</tspan><tspan> </tspan><tspan fill="#a8ff78">"A banana astronaut in space, cinematic"</tspan><tspan fill="#f0f6fc"> \</tspan>
+    </text>
+    <text x="988" y="132" font-family="ui-monospace, 'SFMono-Regular', 'Consolas', monospace" font-size="14" fill="#f0f6fc">
+      <tspan x="1004" fill="#a5d6ff">--resolution</tspan><tspan fill="#f0f6fc"> </tspan><tspan fill="#ffa657">1K</tspan><tspan fill="#f0f6fc">  </tspan><tspan fill="#a5d6ff">--thinking</tspan><tspan fill="#f0f6fc"> </tspan><tspan fill="#ffa657">high</tspan><tspan fill="#f0f6fc">  </tspan><tspan fill="#a5d6ff">--aspect-ratio</tspan><tspan fill="#f0f6fc"> </tspan><tspan fill="#ffa657">16:9</tspan>
+    </text>
+    <text x="988" y="154" font-family="ui-monospace, 'SFMono-Regular', 'Consolas', monospace" font-size="14" fill="#f0f6fc">
+      <tspan x="1004" fill="#a5d6ff">--output-mode</tspan><tspan fill="#f0f6fc"> </tspan><tspan fill="#ffa657">both</tspan><tspan fill="#f0f6fc">  </tspan><tspan fill="#a5d6ff">--output-dir</tspan><tspan fill="#f0f6fc"> </tspan><tspan fill="#a8ff78">./output</tspan>
+    </text>
+
+    <!-- === Terminal Block 2 === -->
+    <rect x="968" y="196" width="912" height="152" rx="10" fill="url(#termGrad)" stroke="#30363d" stroke-width="1"/>
+    <!-- Title bar -->
+    <rect x="968" y="196" width="912" height="32" rx="10" fill="#21262d"/>
+    <rect x="968" y="212" width="912" height="16" fill="#21262d"/>
+    <!-- Traffic lights -->
+    <circle cx="992" cy="212" r="6" fill="#ff5f57"/>
+    <circle cx="1012" cy="212" r="6" fill="#ffbd2e"/>
+    <circle cx="1032" cy="212" r="6" fill="#28c840"/>
+    <!-- Terminal label -->
+    <text x="1424" y="217" font-family="ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#8b949e" text-anchor="middle">nanobanana — image editing</text>
+    <!-- Code lines -->
+    <text x="988" y="258" font-family="ui-monospace, 'SFMono-Regular', 'Consolas', monospace" font-size="14" fill="#f0f6fc">
+      <tspan fill="#8b949e">$ </tspan><tspan fill="#79c0ff">nanobanana</tspan><tspan fill="#f0f6fc"> \</tspan>
+    </text>
+    <text x="988" y="280" font-family="ui-monospace, 'SFMono-Regular', 'Consolas', monospace" font-size="14" fill="#f0f6fc">
+      <tspan x="1004" fill="#a5d6ff">--prompt</tspan><tspan> </tspan><tspan fill="#a8ff78">"Create an ecommerce hero shot"</tspan><tspan fill="#f0f6fc">  </tspan><tspan fill="#a5d6ff">--google-search</tspan><tspan fill="#f0f6fc"> \</tspan>
+    </text>
+    <text x="988" y="302" font-family="ui-monospace, 'SFMono-Regular', 'Consolas', monospace" font-size="14" fill="#f0f6fc">
+      <tspan x="1004" fill="#a5d6ff">-i</tspan><tspan fill="#f0f6fc"> </tspan><tspan fill="#a8ff78">./ref1.png</tspan><tspan fill="#f0f6fc">  </tspan><tspan fill="#a5d6ff">-i</tspan><tspan fill="#f0f6fc"> </tspan><tspan fill="#a8ff78">./ref2.jpg</tspan><tspan fill="#f0f6fc">  </tspan><tspan fill="#a5d6ff">--thinking</tspan><tspan fill="#f0f6fc"> </tspan><tspan fill="#ffa657">medium</tspan>
+    </text>
+    <text x="988" y="324" font-family="ui-monospace, 'SFMono-Regular', 'Consolas', monospace" font-size="14" fill="#f0f6fc">
+      <tspan x="1004" fill="#a5d6ff">--resolution</tspan><tspan fill="#f0f6fc"> </tspan><tspan fill="#ffa657">2K</tspan><tspan fill="#f0f6fc">  </tspan><tspan fill="#a5d6ff">--output-dir</tspan><tspan fill="#f0f6fc"> </tspan><tspan fill="#a8ff78">./heroes</tspan>
+    </text>
+
+    <!-- Bottom accent line under terminals -->
+    <rect x="968" y="462" width="912" height="2" rx="1" fill="#FBBF24" opacity="0.4"/>
+
+    <!-- ===== TOP-RIGHT DECORATIVE SPARKLES ===== -->
+    <g opacity="0.5">
+      <g transform="translate(1866, 44)" opacity="0.9">
+        <line x1="0" y1="-12" x2="0" y2="12" stroke="#FBBF24" stroke-width="1.5"/>
+        <line x1="-12" y1="0" x2="12" y2="0" stroke="#FBBF24" stroke-width="1.5"/>
+        <line x1="-8" y1="-8" x2="8" y2="8" stroke="#FBBF24" stroke-width="1"/>
+        <line x1="8" y1="-8" x2="-8" y2="8" stroke="#FBBF24" stroke-width="1"/>
+      </g>
+      <g transform="translate(1898, 80)" opacity="0.6">
+        <line x1="0" y1="-7" x2="0" y2="7" stroke="#FBBF24" stroke-width="1.2"/>
+        <line x1="-7" y1="0" x2="7" y2="0" stroke="#FBBF24" stroke-width="1.2"/>
+      </g>
+      <g transform="translate(1875, 116)" opacity="0.4">
+        <line x1="0" y1="-5" x2="0" y2="5" stroke="#FBBF24" stroke-width="1"/>
+        <line x1="-5" y1="0" x2="5" y2="0" stroke="#FBBF24" stroke-width="1"/>
+      </g>
+      <circle cx="1845" cy="78" r="2" fill="#FBBF24" opacity="0.6"/>
+      <circle cx="1908" cy="38" r="2.5" fill="#FBBF24" opacity="0.5"/>
+      <circle cx="1852" cy="130" r="1.5" fill="#FBBF24" opacity="0.4"/>
+    </g>
+  </g>
+</svg>
