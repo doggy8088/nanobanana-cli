@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "CLI for Gemini Nano Banana image generation and editing workflows.",
   "bin": {
-    "nanobanana": "./bin/nanobanana.js"
+    "nanobanana": "bin/nanobanana.js"
   },
   "files": [
     "bin/nanobanana.js",
