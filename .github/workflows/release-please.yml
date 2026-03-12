@@ -17,9 +17,17 @@ jobs:
       pull-requests: write
 
     steps:
+      - name: Validate Release Please token
+        run: |
+          if [ -z "${{ secrets.RELEASE_PLEASE_TOKEN }}" ]; then
+            echo "RELEASE_PLEASE_TOKEN is not configured."
+            echo "Create a PAT (repo + pull request write) and set this secret."
+            exit 1
+          fi
+
       - name: Release Please
         uses: googleapis/release-please-action@v4
         with:
-          token: ${{ secrets.RELEASE_PLEASE_TOKEN || secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.RELEASE_PLEASE_TOKEN }}
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
